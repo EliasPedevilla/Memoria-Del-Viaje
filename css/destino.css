@@ -1,0 +1,132 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+ font-family: 'Open Sans', sans-serif;   
+ background-image: url(../img/galeria/Cataratas\ del\ iguazu\ Misiones.JPG); 
+ background-repeat: no-repeat; 
+ background-size: cover;
+ background-attachment: fixed;
+ background-position:inherit;
+}
+
+:root{
+scroll-behavior: smooth;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.header{
+    height: 50vh;
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.blog {
+    width: 50%;
+    position:absolute;
+    right: 40px;
+    padding: 20px;
+    background:#fff;
+}
+
+.imagenes{
+    width: 40%;
+    position:absolute;
+    left: 40px;
+
+}
+
+.imagenes img{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+
+}
+
+.titulo {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.text{
+    color: black;
+    text-align: justify;
+}
+
+
+/* footer */
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0.1px;
+    justify-content: last baseline;
+    align-items: center;
+}
+
+
+.social-media{
+    height: 90px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left:20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #e0c3fc;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+}

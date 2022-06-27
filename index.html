@@ -1,120 +1,258 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memoria del viaje</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navBar">
+      <p class="logo">MEMORIA DEL VIAJE</p>
+      <div class="menu">
+        <a class="item" href="#viajes"> NUESTROS VIAJES </a>
+        <a class="item" href="#galery"> GALERIA </a>
+        <a class="item" href="#nosotros"> NOSOTROS </a>
+      </div>
+    </div>
     <header class="header" id="inicio">
-       <div class="contenedor head">
-           <h1 class="titulo">Memoria del viaje</h1>
-           <p class="copy"> Convirtiendo un sueño en realidad</p>
-       </div>
+      <div class="contenedor head">
+        <h1 class="titulo">Memoria del viaje</h1>
+        <p class="copy">Convirtiendo un sueño en realidad</p>
+      </div>
+      <a href="#viajes"><i class="bx bx-chevron-down slick-down"></i></a>
     </header>
-   <main>
-       <section class="viajes contenedor" id="viajes">
-           <h2 class="subtitulo">Nuestos viajes</h2>
-           <div class="contenedor-viajes"> 
-               <img src="img/las grutas rio negro.JPG" alt="">
-               <div class="cheklist-viajes">
-                   <div class="viajes">
-                        <a href="."><h3 class="n-destino">Merlo</h3></a> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum perspiciatis repellat in recusandae? Est pariatur aperiam voluptatum distinctio itaque dignissimos.</p>
-                        <a href=""><h3 class="n-destino">Buenos Aires</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum perspiciatis repellat in recusandae? Est pariatur aperiam voluptatum distinctio itaque dignissimos.</p>
-                        <a href="./Misiones.html"><h3 class="n-destino">Misiones</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum perspiciatis repellat in recusandae? Est pariatur aperiam voluptatum distinctio itaque dignissimos.</p>
-                        <a href=""><h3 class="n-destino">Los Antiguos</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum perspiciatis repellat in recusandae? Est pariatur aperiam voluptatum distinctio itaque dignissimos.</p>
-                   </div>
-               </div>
-           </div>
-       </section>
-       <section class="gallery carrusel" id="galery">
-        <h2 class="subtitulo">Galeria</h2>  
+    <main>
+      <section class="contenedor" id="viajes">
+        <h2 class="subtitulo">Nuestos viajes</h2>
+        <div class="viajes" id="travels"></div>
+      </section>
+      <section class="gallery carrusel" id="galery">
+        <h2 class="subtitulo">Galeria</h2>
         <div class="slick-list" id="slick-list">
-            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
-                <i class='bx bxs-chevron-left' ></i>
-            </button>
-            <div class="slick-track" id="track">
-                  <img src="img/galeria/bariloche rio negro .JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/bariloche rio negro.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/loncopue mendoza .JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/perito moreno santa cruz.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/merlo san luis .JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/salto del agrio neuquen.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/Altas Cumbres Cordoba,.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/Altas Cumbres, cordoba.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/bariloche rio negr.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/cañon de atuel mendoza 2.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/cañon de atuel mendoza 4.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/cañon de atuel mendoza 5.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/cañon de atuel mendoza 6.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/cañon de atuel mendoza.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/cañon de atuel, mendoza.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/Cataratas del iguazu Misiones.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/caviahue neuquen.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/comodoro rivadavia chubut.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/comodoro rivadavia chubut.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/concordia entre rios 2.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/concordia entre rios.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/Corcovado Cordoba.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/Cordoba.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/corrientes, corrientes .JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/corrientes, corrientes.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/cueva de las manos santa cruz 3.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/Diamante entre rios.JPG" alt="" class="img-galeria slick">
-                   <img src="img/galeria/el bolson rio negro.JPG" alt="" class="img-galeria slick">
-                </div>
-                <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
-                    <i class='bx bxs-chevron-right' ></i>
-                </button>
-        </div>           
-       </section>
-
-       <section class="imagen-light">
-            <img src="img/bx-x.svg" alt="" class="close">
-            <img src="" alt="" class="agregar-imagen">
-        </section>
-        <section class="contenedor" id="nosotros">
-            <h2 class="subtitulo">Nosotros somos:</h2>
-         <section class="nosotros"> 
-            <div class="cont-nosotros ">
-                <img class="img-nicol" src="img/IMGNicol.JPG" alt="">
-                <h3 class="n-persona">Nicol Natalia Baquero Hernandez</h3>
-            </div>
-            <div class="cont-nosotros">
-                <img class="img-elias" src="img/IMGEli.JPG" alt="">
-                <h3 class="n-persona">Elias Pedevilla De Donato</h3>
-            </div>
-         </section>  
-        </section>
-   </main>
-   <footer id="footer">
-        <div class="social-media">
-        <a href="https://www.facebook.com/elias.ped.d/" target="_blank" class="social-media-icon">
-            <i class='bx bxl-facebook'></i>
-        </a>
-        <a href="https://www.instagram.com/?hl=es/elias_pedevilla" target="_blank" class="social-media-icon">
-             <i class='bx bxl-instagram' ></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCCEvPTgEmcqAu__vxakhE2A" target="_blank" class="social-media-icon">
-            <i class='bx bxl-youtube' ></i>
-            </a>
+          <button
+            class="slick-arrow slick-prev"
+            id="button-prev"
+            data-button="button-prev"
+            onclick="app.processingButton(event)"
+          >
+            <i class="bx bxs-chevron-left"></i>
+          </button>
+          <div class="slick-track" id="track">
+            <img
+              src="img/galeria/bariloche rio negro .JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/bariloche rio negro.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/loncopue mendoza .JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/perito moreno santa cruz.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/merlo san luis .JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/salto del agrio neuquen.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/Altas Cumbres Cordoba,.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/Altas Cumbres, cordoba.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/bariloche rio negr.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/cañon de atuel mendoza 2.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/cañon de atuel mendoza 4.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/cañon de atuel mendoza 5.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/cañon de atuel mendoza 6.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/cañon de atuel mendoza.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/cañon de atuel, mendoza.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/Cataratas del iguazu Misiones.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/caviahue neuquen.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/comodoro rivadavia chubut.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/comodoro rivadavia chubut.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/concordia entre rios 2.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/concordia entre rios.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/Corcovado Cordoba.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/Cordoba.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/corrientes, corrientes .JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/corrientes, corrientes.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/cueva de las manos santa cruz 3.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/Diamante entre rios.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+            <img
+              src="img/galeria/el bolson rio negro.JPG"
+              alt=""
+              class="img-galeria slick"
+            />
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            id="button-next"
+            data-button="button-next"
+            onclick="app.processingButton(event)"
+          >
+            <i class="bx bxs-chevron-right"></i>
+          </button>
         </div>
-        <div class="line"></div>
-   </footer>
+      </section>
 
-   <script defer src="./js/carrusel.js"></script>
-   <script src="js/lightBox.js"></script>
-   <script src="js/cargador.js"></script>
-</body>
+      <section class="imagen-light">
+        <i class="bx bx-x close"></i>
+
+        <img src="" alt="" class="agregar-imagen" />
+      </section>
+
+      <section class="contenedor" id="nosotros">
+        <h2 class="subtitulo">Nosotros somos:</h2>
+        <section class="nosotros">
+          <div class="cont-nosotros">
+            <img class="img-nicol" src="img/IMGNicol.JPG" alt="" />
+            <h3 class="n-persona">Nicol Natalia Baquero Hernandez</h3>
+          </div>
+          <div class="cont-nosotros">
+            <img class="img-elias" src="img/IMGEli.JPG" alt="" />
+            <h3 class="n-persona">Elias Pedevilla De Donato</h3>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/elias.ped.d/"
+          target="_blank"
+          class="social-media-icon"
+        >
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/?hl=es/elias_pedevilla"
+          target="_blank"
+          class="social-media-icon"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCCEvPTgEmcqAu__vxakhE2A"
+          target="_blank"
+          class="social-media-icon"
+        >
+          <i class="bx bxl-youtube"></i>
+        </a>
+      </div>
+      <div class="line"></div>
+    </footer>
+
+    <script defer src="./js/carrusel.js"></script>
+    <script src="js/lightBox.js"></script>
+    <script src="js/cargador.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
-

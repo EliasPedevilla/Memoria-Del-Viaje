@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Misiones",
+    "desciption": "Nuestro primer viaje por la mesopotamia argentina",
+    "img": "/img/galeria/Misiones"
+  },
+  {
+    "id": 2,
+    "name": "Buenos Aires",
+    "desciption": "Un viaje en familia a la costa",
+    "img": "/img/galeria/las-grutas-rio-negro"
+  },
+  {
+    "id": 3,
+    "name": "Merlo",
+    "desciption": "Visitando a la familia y paseando por las sierras de Cordoba",
+    "img": "/img/galeria/Merlo-san-Luis"
+  },
+  {
+    "id": 4,
+    "name": "Pataginia Argentina",
+    "desciption": "Nuestro segundo viaje largo en moto conociendo la Patagonia desde Cordoba hasta Santa Cruz",
+    "img": "/img/galeria/bariloche-rio-negro.JPG"
+  }
+]

@@ -1,308 +1,397 @@
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
- font-family: 'Open Sans', sans-serif;   
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-:root{
-scroll-behavior: smooth;
+:root {
+  scroll-behavior: smooth;
 }
 
-.contenedor{
-    width: 90%;
-    max-width: 1200px;
-    overflow: hidden;
-    margin: auto;
-    padding: 60px 0; 
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0;
 }
 
-.header{
-    height: 100vh;
-    background-image: linear-gradient(to top, rgba(109, 255, 248, 0.4) 0%, rgba(255, 148, 182, 0.4) 100%), url(../img/galeria/bariloche\ rio\ negro\ .JPG); 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+.navBar {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-weight: 600;
 }
 
-.head{
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
+.menu {
+  display: flex;
+}
+
+.item {
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(109, 255, 248, 0.4) 0%,
+      rgba(255, 148, 182, 0.4) 100%
+    ),
+    url(../img/galeria/bariloche-rio-negro.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
 }
 
 .titulo {
-    font-size: 60px;
-    margin-bottom: 15px;
+  font-size: 60px;
+  margin-bottom: 15px;
 }
 
 .copy {
-    font-weight: 300;
-    font-size: 30px;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-weight: 600;
+  color: rgb(12, 12, 12);
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.slick-down {
+  position: relative;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 40px;
+  text-decoration: none;
 }
 
 /* Nuestros viajes */
 
-.subtitulo{
-    text-align: center;
-    font-weight: 100;
-    color: rgb(175, 121, 247);
-    margin-bottom: 40px;
-    font-size: 40px;
+.card {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.5);
+  margin: 0 20px 40px 20px;
 }
 
-.contenedor-viajes {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+.card:hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
-.contenedor-viajes img {
-    width: 40%;
+.card p {
+  font-weight: 500;
 }
 
-.cheklist-viajes {
-    width: 45%;
+.card img {
+  width: 100%;
+  height: 150px;
 }
 
-.viajes{
-    margin-bottom: 20px;
+.cardBody {
+  padding: 0 20px 20px 20px;
 }
 
-.n-destino{
-    color: black; 
+.viajes {
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.viajes p{
-    margin-bottom: 7px;
-    color: black;
+.n-destino {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
 }
 
-.viajes a{
-    text-decoration: none;
+.viajes p {
+  margin-bottom: 7px;
+  color: black;
+}
+
+.viajes a {
+  text-decoration: none;
 }
 
 /* Gallery */
 
 .gallery {
-    color: #f2f2f2;
+  color: #f2f2f2;
 }
 
 .contenedor-galeria {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-    padding: 7px;
-    transform: translate(0);
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 7px;
+  transform: translate(0);
 }
 
-
-
 .img-galeria {
-    width: 33,3%;
-    display: block;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-    cursor: pointer;
-    border-radius: 5%;
+  width: 33, 3%;
+  display: block;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 5%;
 }
 
 /* ------------ */
 
-.slick-list{
-    position: relative;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    padding: 10px 0px;
-    margin: 0px auto;
-    max-width: 90vw;
-    overflow: hidden;
+.slick-list {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
 }
-.slick-track{
-    position: relative;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-    justify-content:space-between;
-    transition: .5s ease-in-out;
+.slick-track {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-between;
+  transition: 0.5s ease-in-out;
 }
-.slick{
-    position: relative;
-    width: 365px;
-    float: left;
-    box-sizing: border-box;
-    display: flex;
-    height: 100%;
-}
-
-.slick img{
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
-    transition: .3s ease-in-out;
+.slick {
+  position: relative;
+  width: 365px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
 }
 
-
-.slick-arrow{
-    position: absolute;
-    border-radius: 30px;
-    background-color: #fff;
-    z-index: 2;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
-    border: 0;
-    cursor: pointer;
-    color: rgba(0,0,0,.7);
+.slick img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
 }
-.slick-prev{
-    left: 0px;
-} 
-.slick-next{
-    right: 0px;
+
+.slick-arrow {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slick-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slick-arrow:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.slick-prev {
+  left: 0px;
+}
+.slick-next {
+  right: 0px;
 }
 
 /* ------- */
-.imagen-light{
-    position: fixed;
-    background-color: rgba(0, 0, 0, .8);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(100%);
-    transition: transform .2 ease-in-out;
+.imagen-light {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: transform 0.2 ease-in-out;
 }
 
-.show{
-    transform: translate(0);
+.show {
+  transform: translate(0);
 }
 
 .agregar-imagen {
-    width: 80%;
-    border-radius: 7px;
-    transform: scale(0);
-    transition: transform .3s .2s;
+  width: 80%;
+  border-radius: 7px;
+  transform: scale(0);
+  transition: transform 0.3s 0.2s;
 }
 
-.showImage{
-    transform: scale(1);
+.showImage {
+  transform: scale(1);
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    cursor: pointer;
+  position: absolute;
+  z-index: 21;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
 }
 
-.nosotros{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+.nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.cont-nosotros{
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
+.cont-nosotros {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.cont-nosotros img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    object-fit: cover;
+.cont-nosotros img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  object-fit: cover;
 }
 
-.img-elias{
-    object-position: -80px;
-
+.img-elias {
+  object-position: -80px;
 }
 
-.img-nicol{
-    object-position: -20px;
-
+.img-nicol {
+  object-position: -20px;
 }
 
-.n-persona{
-    display: inline-block;
-    margin-top: 20px;
-    width: 100%;
-    font-weight: 600;
+.n-persona {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 600;
+  color: black;
 }
 
 /* Footer */
 
-footer{
-    width: 100%;
-    background-image: linear-gradient(to top, rgba(109, 255, 248, 0.4) 0%, rgba(255, 148, 182, 0.4) 100%), url(../img/galeria/bariloche\ rio\ negro\ .JPG); 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    margin: 0;
-    padding-bottom: 0.1px;
-    justify-content: last baseline;
-    align-items: center;
+footer {
+  width: 100%;
+  background-image: linear-gradient(
+      to top,
+      rgba(109, 255, 248, 0.4) 0%,
+      rgba(255, 148, 182, 0.4) 100%
+    ),
+    url(../img/galeria/bariloche-rio-negro.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding-bottom: 0.1px;
+  justify-content: last baseline;
+  align-items: center;
 }
 
-
-.social-media{
-    height: 90px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.social-media {
+  height: 90px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.social-media-icon{
-    display: inline-block;
-    margin-left:20px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    text-align: center;
-    color: #fff;
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
 }
 
-.social-media-icon:hover{
-    background: #fff;
-    color: #e0c3fc;
+.social-media-icon:hover {
+  background: #fff;
+  color: #e0c3fc;
 }
 
-.social-media-icon i{
-    font-size: 30px;
-    line-height: 60px;
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
 }
 
-.line{
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 2px;
-    background: #fff;
+.line {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+  background: #fff;
 }

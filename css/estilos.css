@@ -42,6 +42,10 @@ body {
   font-size: large;
 }
 
+.item:hover {
+  text-decoration: solid underline white 3px;
+}
+
 .logo {
   color: white;
   text-decoration: none;
@@ -55,7 +59,7 @@ body {
       rgba(109, 255, 248, 0.4) 0%,
       rgba(255, 148, 182, 0.4) 100%
     ),
-    url(../img/galeria/bariloche-rio-negro.JPG);
+    url(../img/galery/bariloche.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -348,7 +352,7 @@ footer {
       rgba(109, 255, 248, 0.4) 0%,
       rgba(255, 148, 182, 0.4) 100%
     ),
-    url(../img/galeria/bariloche-rio-negro.JPG);
+    url(../img/galery/bariloche.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
